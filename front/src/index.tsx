@@ -7,6 +7,12 @@ import App from 'App'
 import reportWebVitals from './reportWebVitals'
 import router from './router/router'
 
+import { Worker } from './mock/Worker'
+
+if (process.env.NODE_ENV === 'development') {
+    Worker.start()
+}
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
         <App />
