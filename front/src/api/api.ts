@@ -1,42 +1,51 @@
 import axios from 'axios'
 
-// BASE_URL 설정
-const config = {
-    BASE_URL: 'http://localhost:8080/api/v1',
+// API 요청에 필요한 Interface 설정
+interface fetchWrapItems {
+  method: 'get' | 'post' | 'put' | 'delete'
+  url: string
+  body?: object
 }
-
 // headers 설정
 const headers = {
-    'Content-Type': 'application/json;charset=UTF-8',
-    Accept: '*/*',
-    'Access-Control-Allow-Origin': '*',
-    crossDomain: true,
-    credentials: 'include',
-    withCredentials: true,
+  'Content-Type': 'application/json;charset=UTF-8',
+  Accept: '*/*',
+  'Access-Control-Allow-Origin': '*',
+  crossDomain: true,
+  credentials: 'include',
+  withCredentials: true,
 }
 
-/**
- * axios instance 생성
- *
- * oauth 시에는 axios import 해서 바로 사용하기
- * koflowa 백엔드 요청시에만 아래 정의한 api 사용
- */
-export const api = (accessToken: string) => {
-    if (accessToken) {
-        return axios.create({
-            baseURL: config.BASE_URL,
-            headers: {
-                ...headers,
-                Authorization: `Bearer ${accessToken}`,
-            },
-        })
+const fetchWrap = async ({ method, url, body }: fetchWrapItems) => {
+  const token = localStorage.getItem('token')
+  try {
+    const config = {
+      baseURL: 'http://localhost:8080/api/v1',
+      headers: {
+        ...headers,
+        Authorization: token ? `Bearer ${token}` : '',
+      },
     }
-    return axios.create({
-        baseURL: config.BASE_URL,
-        headers: {
-            ...headers,
-        },
-    })
+    const { data } =
+      (method === 'get' && (await axios.get(url, config))) ||
+      (method === 'post' && (await axios.post(url, body, config))) ||
+      (method === 'put' && (await axios.put(url, body, config))) ||
+      (method === 'delete' && (await axios.delete(url, config))) ||
+      {}
+    return data
+  } catch (err: any) {
+    if (err.response.status === 404 || err.response.status === 401) {
+      console.log('Error!')
+    }
+    throw err
+  }
 }
 
-export default api
+// API 요청 종류 선언
+// 앞으로 요청을 import 해서 axios 요청 작성하면 된다
+export const GET = (url: string) => fetchWrap({ method: 'get', url })
+export const POST = (url: string, body: object) =>
+  fetchWrap({ method: 'post', url, body })
+export const PUT = (url: string, body: object) =>
+  fetchWrap({ method: 'put', url, body })
+export const DELETE = (url: string) => fetchWrap({ method: 'delete', url })
