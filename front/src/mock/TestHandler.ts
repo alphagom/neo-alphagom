@@ -3,12 +3,12 @@
 import { rest } from 'msw'
 
 export const TestHandler = [
-    rest.get('http://localhost:8080/api/v1/test', (req, res, ctx) =>
-        res(
-            ctx.status(200),
-            ctx.json({
-                msg: 'test api 입니다.',
-            })
-        )
-    ),
+  rest.post('http://localhost:8080/api/v1/login', (req, res, ctx) =>
+    res(
+      ctx.status(200),
+      ctx.json({
+        token: 'hyunjungleegenius',
+      })
+    )
+  ),
 ]
