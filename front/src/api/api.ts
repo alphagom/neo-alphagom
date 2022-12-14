@@ -1,5 +1,8 @@
 import axios from 'axios'
 
+// base url 선언
+const BASE_URL = 'http://localhost:8080/api/v1'
+
 // API 요청에 필요한 Interface 설정
 interface fetchWrapItems {
   method: 'get' | 'post' | 'put' | 'delete'
@@ -20,7 +23,7 @@ const fetchWrap = async ({ method, url, body }: fetchWrapItems) => {
   const token = localStorage.getItem('token')
   try {
     const config = {
-      baseURL: 'http://localhost:8080/api/v1',
+      baseURL: BASE_URL,
       headers: {
         ...headers,
         Authorization: token ? `Bearer ${token}` : '',
