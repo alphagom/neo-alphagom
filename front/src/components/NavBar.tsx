@@ -10,7 +10,7 @@ import { Menu } from 'store/type'
 
 // 로그인 api, url import
 import { login } from 'api/authApi'
-import { loginApi } from 'api/url'
+import { loginUrl } from 'api/url'
 
 function NavBar() {
   /**
@@ -51,7 +51,7 @@ function NavBar() {
       pw: mypw,
     }
     const getData = () =>
-      login(loginApi, body).then((data) => {
+      login(loginUrl, body).then((data) => {
         console.log(data)
         setToken(data.token)
       })
