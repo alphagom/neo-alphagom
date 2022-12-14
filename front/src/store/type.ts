@@ -4,3 +4,9 @@ export enum Menu {
   PORTFOLIO = 'blue',
   MYPORTFOLIO = 'green',
 }
+
+// 로그인 시 아이디, 패스워드 type
+export interface LoginType {
+  id: string
+  pw: string
+}

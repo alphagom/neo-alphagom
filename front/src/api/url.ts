@@ -1,5 +1,3 @@
-const TEST = '/test'
+const LOGIN = '/login'
 
-// test
-// eslint-disable-next-line import/prefer-default-export
-export const testApi = TEST
+export const loginApi = LOGIN
