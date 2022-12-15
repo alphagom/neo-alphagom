@@ -6,13 +6,44 @@ font-family: 'NanumSquareBold';
 font-family: 'NanumSquareExtraBold';
 */
 
+/* 컬러 변수 지정 */
+:root {
+  --pink: #ff778f;
+  --coral: #ea6b6b;
+  --peach: #f8d8c1;
+  --light-yellow: #fff48e;
+  --code_bg: #f4f3ec;
+  --light-green: #d6ffbe;
+  --light-mint: #94d794;
+  --green: #36cc7c;
+  --light-gray-leaf: #98a99a;
+  --leaf: #77a668;
+  --light-tree: #6fab97;
+  --tree: #228765;
+  --dark-tree: #36574c;
+  --explain: #63c9df;
+  --white: #ffffff;
+  --gray_sixth: #f3f3f3;
+  --gray_fifth: #d9d9d9;
+  --gray_fourth: #b4b4b4;
+  --gray_third: #7d7d7d;
+  --gray_secondary: #6c6c6c;
+  --gray_primary: #333333;
+  --black: #000000;
+  /* --linear_1: {background: rgb(214,255,190);
+    background: linear-gradient(90deg, rgba(214,255,190,0.8) 0%, rgba(180,180,180,0.2) 100%);}; */
+}
+
 body {
   margin: 0;
-  font-family: 'NanumSquare', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+  font-family: 'NanumSquare', -apple-system, BlinkMacSystemFont, system-ui,
+    'Segoe UI', 'Roboto', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  color: var(--gray_secondary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {

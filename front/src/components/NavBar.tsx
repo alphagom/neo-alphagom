@@ -1,5 +1,6 @@
 import React, { useState, ComponentProps } from 'react'
 import { Link } from 'react-router-dom'
+import './NavBar.css'
 
 // atom 을 사용하기 위해 recoil 라이브러리 import
 import { useRecoilState } from 'recoil'
@@ -61,17 +62,29 @@ function NavBar() {
   }
 
   return (
-    <div>
+    <div className="temp-navbar">
       {/* atom 사용법 (임시) */}
       <div style={tempStyle} />
-      <Link to="/" onClick={() => setMenuColor(Menu.HOME)}>
-        <h1>홈</h1>
+      <Link
+        to="/"
+        onClick={() => setMenuColor(Menu.HOME)}
+        className="nav-items"
+      >
+        <div>홈</div>
       </Link>
-      <Link to="/portfolio" onClick={() => setMenuColor(Menu.PORTFOLIO)}>
-        <h1>포트폴리오 만들기</h1>
+      <Link
+        to="/portfolio"
+        onClick={() => setMenuColor(Menu.PORTFOLIO)}
+        className="nav-items"
+      >
+        <div>포트폴리오 만들기</div>
       </Link>
-      <Link to="/myportfolio" onClick={() => setMenuColor(Menu.MYPORTFOLIO)}>
-        <h1>내 포트폴리오</h1>
+      <Link
+        to="/myportfolio"
+        onClick={() => setMenuColor(Menu.MYPORTFOLIO)}
+        className="nav-items"
+      >
+        <div>내 포트폴리오</div>
       </Link>
 
       {/* 로그인 폼 (임시) */}

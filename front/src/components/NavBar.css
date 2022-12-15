@@ -1,0 +1,22 @@
+.temp-navbar {
+  width: auto;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items {
+  font-family: 'NanumSquareBold';
+  color: var(--gray_secondary);
+  font-size: 20px;
+  text-decoration: none;
+}
+.nav-items:hover {
+  color: var(--gray_primary);
+}
+.nav-items:focus {
+  font-family: 'NanumSquareExtraBold';
+  color: var(--black);
+}
+/* 선택된 상태의 컬러를 유지하기 위해선 tsx 파일 쪽에서 클래스를 추가하는 등의 행위가 필요함 */
