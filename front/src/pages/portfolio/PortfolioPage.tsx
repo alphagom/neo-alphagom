@@ -1,9 +1,10 @@
 import React from 'react'
+import PorfolioItemBar from './components/PortfolioItemBar'
 
 function PortfolioPage() {
   return (
     <div>
-      <p>PortfolioPage</p>
+      <PorfolioItemBar />
     </div>
   )
 }
