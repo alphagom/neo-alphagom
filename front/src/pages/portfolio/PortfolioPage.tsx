@@ -1,10 +1,12 @@
 import React from 'react'
 import PorfolioItemBar from './components/PortfolioItemBar'
+import PortfolioWithDesign from './components/PortfolioWithDesign'
 
 function PortfolioPage() {
   return (
-    <div>
+    <div style={{ display: 'flex' }}>
       <PorfolioItemBar />
+      <PortfolioWithDesign />
     </div>
   )
 }
