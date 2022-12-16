@@ -1,7 +1,31 @@
+// 포트폴리오 디자인 import
+import ActivitiesDesign from 'pages/portfolio/components/itemdesigns/base/ActivitiesDesign'
+import AwardsDesign from 'pages/portfolio/components/itemdesigns/base/AwardsDesign'
+import CareerDesign from 'pages/portfolio/components/itemdesigns/base/CareerDesign'
+import CoverDesign from 'pages/portfolio/components/itemdesigns/base/CoverDesign'
+import CoverletterDesign from 'pages/portfolio/components/itemdesigns/base/CoverletterDesign'
+import EducationDesign from 'pages/portfolio/components/itemdesigns/base/EducationDesign'
+import InfoDesigns from 'pages/portfolio/components/itemdesigns/base/InfoDesigns'
+import ProjectDesign from 'pages/portfolio/components/itemdesigns/base/ProjectDesign'
+
+// 포트폴리오 입력폼 import
+import ActivitiesForm from 'pages/portfolio/components/itemforms/ActivitiesForm'
+import AwardsForm from 'pages/portfolio/components/itemforms/AwardsForm'
+import CareerForm from 'pages/portfolio/components/itemforms/CareerForm'
+import CoverForm from 'pages/portfolio/components/itemforms/CoverForm'
+import CoverletterForm from 'pages/portfolio/components/itemforms/CoverletterForm'
+import EducationForm from 'pages/portfolio/components/itemforms/EducationForm'
+import InfoForm from 'pages/portfolio/components/itemforms/InfoForm'
+import ProjectForm from 'pages/portfolio/components/itemforms/ProjectForm'
+import React from 'react'
+
 // 포트폴리오 항목 - 인덱스 연결 type
 export interface PorfolioItemsType {
-  portfolioItems: number
+  order: number
   mustHave: boolean
+  itemTitle: string
+  itemDesign: React.ElementType
+  itemForm: React.ElementType
 }
 
 // 포트폴리오 항목 Enum
@@ -32,35 +56,59 @@ export const PortfolioItemsStr = [
 
 export const PortfolioItems: PorfolioItemsType[] = [
   {
-    portfolioItems: PortfoiloItemsEnum.COVER,
+    order: PortfoiloItemsEnum.COVER,
     mustHave: true,
+    itemTitle: '표지',
+    itemDesign: CoverDesign,
+    itemForm: CoverForm,
   },
   {
-    portfolioItems: PortfoiloItemsEnum.INFO,
+    order: PortfoiloItemsEnum.INFO,
     mustHave: true,
+    itemTitle: '기본정보',
+    itemDesign: InfoDesigns,
+    itemForm: InfoForm,
   },
   {
-    portfolioItems: PortfoiloItemsEnum.EDUCATION,
+    order: PortfoiloItemsEnum.EDUCATION,
     mustHave: true,
+    itemTitle: '학력',
+    itemDesign: EducationDesign,
+    itemForm: EducationForm,
   },
   {
-    portfolioItems: PortfoiloItemsEnum.PROJECT,
+    order: PortfoiloItemsEnum.PROJECT,
     mustHave: false,
+    itemTitle: '프로젝트',
+    itemDesign: ProjectDesign,
+    itemForm: ProjectForm,
   },
   {
-    portfolioItems: PortfoiloItemsEnum.ACTIVITIES,
+    order: PortfoiloItemsEnum.ACTIVITIES,
     mustHave: false,
+    itemTitle: '대내외활동',
+    itemDesign: ActivitiesDesign,
+    itemForm: ActivitiesForm,
   },
   {
-    portfolioItems: PortfoiloItemsEnum.AWARDS,
+    order: PortfoiloItemsEnum.AWARDS,
     mustHave: false,
+    itemTitle: '수상내역',
+    itemDesign: AwardsDesign,
+    itemForm: AwardsForm,
   },
   {
-    portfolioItems: PortfoiloItemsEnum.CAREER,
+    order: PortfoiloItemsEnum.CAREER,
     mustHave: false,
+    itemTitle: '경력',
+    itemDesign: CareerDesign,
+    itemForm: CareerForm,
   },
   {
-    portfolioItems: PortfoiloItemsEnum.COVERLETTER,
+    order: PortfoiloItemsEnum.COVERLETTER,
     mustHave: false,
+    itemTitle: '자기소개서',
+    itemDesign: CoverletterDesign,
+    itemForm: CoverletterForm,
   },
 ]
