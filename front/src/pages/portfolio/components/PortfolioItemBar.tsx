@@ -66,7 +66,7 @@ function PortfolioItemBar() {
           >
             <p key={idx} draggable>
               {item.mustHave && <span>*</span>}
-              {item.portfolioItems}
+              {item.itemTitle}
             </p>
           </div>
         ))}
