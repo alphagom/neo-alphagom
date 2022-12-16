@@ -52,7 +52,7 @@ function PortfolioItemBar() {
   }
 
   return (
-    <div>
+    <div className="portfolio-item-bar">
       <span>
         {/* idx 는 고유한 key 값으로 쓰면 안됨 (예외적인 상황 제외) 
         여기서는 순서가 변경될 때마다 바뀌어야하므로 idx 로 key 값 지정 */}

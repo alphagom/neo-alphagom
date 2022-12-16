@@ -4,7 +4,7 @@ import './PortfolioPage.css'
 
 function PortfolioPage() {
   return (
-    <div>
+    <div className="portfolio-page">
       <PorfolioItemBar />
     </div>
   )
