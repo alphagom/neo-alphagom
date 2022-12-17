@@ -20,7 +20,7 @@ import ProjectForm from 'pages/portfolio/components/itemforms/ProjectForm'
 import React from 'react'
 
 // 포트폴리오 항목 - 인덱스 연결 type
-export interface PorfolioItemsType {
+export interface IporfolioItemsType {
   order: number
   mustHave: boolean
   itemTitle: string
@@ -54,7 +54,8 @@ export const PortfolioItemsStr = [
   '자기소개서',
 ]
 
-export const PortfolioItems: PorfolioItemsType[] = [
+// 포트폴리오 항목별 내용
+export const PortfolioItems: IporfolioItemsType[] = [
   {
     order: PortfoiloItemsEnum.COVER,
     mustHave: true,
@@ -112,3 +113,36 @@ export const PortfolioItems: PorfolioItemsType[] = [
     itemForm: CoverletterForm,
   },
 ]
+
+// ====================================
+// 프로젝트 내부 항목들 타입
+export interface IprojectItemsType {
+  pjtName: string
+  pjtStartDate: string
+  pjtEndDate: string
+  pjtExplain: string
+  pjtPeople: number | null
+  pjtMyWork: string
+  pjtLink: Array<string>
+  pjtResults: string
+  pjtThink: string
+  pjtImage: Array<string>
+}
+
+// 프로젝트 내부 항목들
+export const ProjectItems: IprojectItemsType = {
+  pjtName: '말해봐요, 알파곰',
+  pjtStartDate: '2022.08.17',
+  pjtEndDate: '2022.10.17',
+  pjtExplain:
+    '프로젝트 알파곰은 정말 멋진 프로젝트 입니다. 알파곰이 귀엽습니다.',
+  pjtPeople: 6,
+  pjtMyWork: '프론트엔드를 맡아 빛과 소금의 코드를 작성',
+  pjtLink: [
+    'https://github.com/alphagom/neo-alphagom',
+    'https://github.com/hyunjung20222',
+  ],
+  pjtResults: '한국어 학습 능률이 오른 걸 확인할 수 있었습니다.',
+  pjtThink: '배운 게 많았습니다.',
+  pjtImage: [],
+}
