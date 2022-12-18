@@ -1,7 +1,7 @@
 import React from 'react'
 import PorfolioItemBar from './components/PortfolioItemBar'
-import './PortfolioPage.css'
 import PortfolioWithDesign from './components/PortfolioWithDesign'
+import './PortfolioPage.scss'
 
 function PortfolioPage() {
   return (
