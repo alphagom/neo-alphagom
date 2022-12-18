@@ -1,0 +1,85 @@
+@import '../styles/mixins';
+
+.nav-item-line {
+  height: 24px;
+  width: 1.5px;
+  background: $gray_secondary;
+}
+
+@include mobile {
+  .temp-navbar {
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-items {
+    font-family: $NanumSquareBold;
+    color: $gray_secondary;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nav-items:hover {
+    color: $gray_primary;
+  }
+  .nav-items:focus {
+    font-family: $NanumSquareExtraBold;
+    color: $black;
+  }
+  /* 선택된 상태의 컬러를 유지하기 위해선 tsx 파일 쪽에서 클래스를 추가하는 등의 행위가 필요함 */
+}
+
+@include tablet {
+  .temp-navbar {
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-items {
+    font-family: $NanumSquareBold;
+    color: $gray_secondary;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nav-items:hover {
+    color: $gray_primary;
+  }
+  .nav-items:focus {
+    font-family: $NanumSquareExtraBold;
+    color: $black;
+  }
+  /* 선택된 상태의 컬러를 유지하기 위해선 tsx 파일 쪽에서 클래스를 추가하는 등의 행위가 필요함 */
+}
+
+@include desktop {
+  .temp-navbar {
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-items {
+    font-family: $NanumSquareBold;
+    color: $gray_secondary;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nav-items:hover {
+    color: $gray_primary;
+  }
+  .nav-items:focus {
+    font-family: $NanumSquareExtraBold;
+    color: $black;
+  }
+  /* 선택된 상태의 컬러를 유지하기 위해선 tsx 파일 쪽에서 클래스를 추가하는 등의 행위가 필요함 */
+}
