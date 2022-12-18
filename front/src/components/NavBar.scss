@@ -1,5 +1,7 @@
 @import '../styles/mixins';
 
+// 스크롤 다운 이벤트 감지 시 높이 변화 줄 예정
+
 .nav-item-line {
   height: 24px;
   width: 1.5px;
@@ -9,7 +11,7 @@
 @include mobile {
   .temp-navbar {
     width: auto;
-    height: 200px;
+    height: $navbar-height;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -35,7 +37,7 @@
 @include tablet {
   .temp-navbar {
     width: auto;
-    height: 200px;
+    height: $navbar-height;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -61,7 +63,7 @@
 @include desktop {
   .temp-navbar {
     width: auto;
-    height: 200px;
+    height: $navbar-height;
     display: flex;
     flex-direction: row;
     justify-content: center;
