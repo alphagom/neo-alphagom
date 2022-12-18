@@ -1,8 +1,85 @@
-.portfolio-page {
-  height: 100%;
-  width: 100%;
+@import '../../styles/mixins';
+
+@include mobile {
+  .portfolio-page {
+    width: 100%;
+    height: calc(100% - 200px);
+  }
+  .portfolio-item-bar {
+    // 모바일일 땐 토글로 접었다 펴야 할 듯
+    width: 50px;
+    padding: 15px;
+    padding-top: 22px;
+    background-color: $pink;
+    text-align: center;
+    overflow: auto;
+  }
+  .portfolio-with-design {
+    width: 100%;
+    padding: 20px;
+    padding-top: 22px;
+    background-color: $green;
+    overflow: auto;
+  }
+  .design-recommend-bar {
+    // 모바일일 땐 토글로 접었다 펴야 할 듯
+    width: 50px;
+    padding: 15px;
+    padding-top: 22px;
+    background-color: $explain;
+    text-align: center;
+    overflow: auto;
+  }
 }
-.portfolio-item-bar {
-  width: 100px;
-  background-color: var(--pink);
+
+@include tablet {
+  .portfolio-page {
+    width: 100%;
+    height: calc(100% - 200px);
+  }
+  .portfolio-item-bar {
+    width: 200px;
+    padding: 20px;
+    padding-top: 22px;
+    background-color: $pink;
+  }
+  .portfolio-with-design {
+    width: 100%;
+    padding: 20px;
+    padding-top: 22px;
+    background-color: $green;
+    overflow: auto;
+  }
+  .design-recommend-bar {
+    width: 200px;
+    padding: 20px;
+    padding-top: 22px;
+    background-color: $explain;
+  }
+}
+
+@include desktop {
+  .portfolio-page {
+    width: 100%;
+    height: calc(100% - 200px);
+  }
+  .portfolio-item-bar {
+    width: 200px;
+    padding: 20px;
+    padding-top: 22px;
+    background-color: $pink;
+  }
+  .portfolio-with-design {
+    width: 100%;
+    padding: 20px;
+    padding-top: 22px;
+    background-color: $green;
+    overflow: auto;
+  }
+  .design-recommend-bar {
+    width: 200px;
+    padding: 20px;
+    padding-top: 22px;
+    background-color: $explain;
+  }
 }
