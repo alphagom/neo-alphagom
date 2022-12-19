@@ -1,0 +1,56 @@
+// 폰트 변수
+$NanumSquareLight: 'NanumSquareLight', -apple-system, BlinkMacSystemFont,
+  system-ui, 'Segoe UI', 'Roboto', 'Apple SD Gothic Neo', 'Noto Sans KR',
+  'Malgun Gothic', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  sans-serif !default;
+$NanumSquare: 'NanumSquare', -apple-system, BlinkMacSystemFont, system-ui,
+  'Segoe UI', 'Roboto', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif !default;
+$NanumSquareBold: 'NanumSquareBold', -apple-system, BlinkMacSystemFont,
+  system-ui, 'Segoe UI', 'Roboto', 'Apple SD Gothic Neo', 'Noto Sans KR',
+  'Malgun Gothic', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  sans-serif !default;
+$NanumSquareExtraBold: 'NanumSquareExtraBold', -apple-system, BlinkMacSystemFont,
+  system-ui, 'Segoe UI', 'Roboto', 'Apple SD Gothic Neo', 'Noto Sans KR',
+  'Malgun Gothic', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+  'Helvetica Neue', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  sans-serif !default;
+// ____________________________________________________________
+
+// 컬러 변수
+$pink: #ff778f !default;
+$coral: #ea6b6b !default;
+$peach: #f8d8c1 !default;
+$light-yellow: #fff48e !default;
+$code_bg: #f4f3ec !default;
+$light-green: #d6ffbe !default;
+$light-mint: #94d794 !default;
+$green: #36cc7c !default;
+$light-gray-leaf: #98a99a !default;
+$leaf: #77a668 !default;
+$light-tree: #6fab97 !default;
+$tree: #228765 !default;
+$dark-tree: #36574c !default;
+$explain: #63c9df !default;
+$white: #ffffff !default;
+$gray_sixth: #f3f3f3 !default;
+$gray_fifth: #d9d9d9 !default;
+$gray_fourth: #b4b4b4 !default;
+$gray_third: #7d7d7d !default;
+$gray_secondary: #6c6c6c !default;
+$gray_primary: #333333 !default;
+$black: #000000 !default;
+// $linear_1: {background: rgb(214,255,190);
+//   background: linear-gradient(90deg, rgba(214,255,190,0.8) 0%, rgba(180,180,180,0.2) 100%);};
+
+// 브레이크 포인트 변수
+$breakpoint-mobile: 335px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
+// 컴포넌트 별 기본 변수? 추가한다면 여기에
+// 평상시, hover, focus 뭐 이런 식으로 나뉠 듯?
+$navbar-height: 200px !default;
