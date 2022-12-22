@@ -62,6 +62,7 @@
 
 @include desktop {
   .navbar {
+    position: relative;
     height: $navbar-height;
     display: flex;
     flex-direction: row;
@@ -104,8 +105,10 @@
     color: $black;
   }
   .user-icon {
+    position: absolute;
     width: 67px;
-    margin-bottom: 35px;
+    bottom: 67px;
+    right: 145px;
   }
   /* 선택된 상태의 컬러를 유지하기 위해선 tsx 파일 쪽에서 클래스를 추가하는 등의 행위가 필요함 */
 }
