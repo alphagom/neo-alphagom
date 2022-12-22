@@ -30,8 +30,8 @@ function NavBar() {
             </Link>
           </div>
         </div>
-        <UserIcon />
       </div>
+      <UserIcon />
     </div>
   )
 }
