@@ -15,8 +15,8 @@ function InfoDesign() {
           />
         </div>
         <div className="base-item">
-          <BaseItemTitle />
-          <BaseItemContent />
+          <BaseItemTitle titleValue="학교" />
+          <BaseItemContent contentValue="계명대학교" />
         </div>
       </div>
     </div>

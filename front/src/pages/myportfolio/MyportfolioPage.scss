@@ -1,0 +1,49 @@
+@import '../../styles/mixins';
+
+@include mobile {
+  .portfolio-page {
+    width: 100%;
+    height: calc(100% - 200px);
+    display: flex;
+  }
+  .portfolio-with-design {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    padding-top: 22px;
+    overflow: auto;
+  }
+}
+
+@include tablet {
+  .portfolio-page {
+    width: 100%;
+    height: calc(100% - 200px);
+    display: flex;
+  }
+  .portfolio-with-design {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    padding-top: 22px;
+    overflow: auto;
+  }
+}
+
+@include desktop {
+  .portfolio-page {
+    width: 100%;
+    height: calc(100% - 200px);
+    display: flex;
+  }
+  .portfolio-with-design {
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    padding-top: 22px;
+    overflow: auto;
+  }
+}

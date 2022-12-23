@@ -18,3 +18,52 @@
     @content;
   }
 }
+
+// input placeholder color
+// placeholder
+@mixin input-placeholder-color {
+  &::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: $gray-fourth;
+    &:focus {
+      &::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: $gray-secondary;
+      }
+    }
+  }
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $gray-fourth;
+    opacity: 1;
+    &:focus {
+      &:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: $gray-secondary;
+        opacity: 1;
+      }
+    }
+  }
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $gray-fourth;
+    opacity: 1;
+    &:focus {
+      &::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: $gray-secondary;
+        opacity: 1;
+      }
+    }
+  }
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $gray-fourth;
+    &:focus {
+      &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: $gray-secondary;
+      }
+    }
+  }
+}

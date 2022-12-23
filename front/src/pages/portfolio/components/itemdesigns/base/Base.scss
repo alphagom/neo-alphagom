@@ -37,7 +37,7 @@
       width: 50%;
       // margin-bottom: 7px;
 
-      .base-item-title {
+      &-title {
         width: 97px;
         height: 46px;
         display: flex;
@@ -49,11 +49,32 @@
         color: $gray-primary;
       }
 
-      .base-item-content {
+      &-content {
         align-items: center;
         font-family: $NanumSquareBold;
         font-size: 20px;
         color: $gray-secondary;
+
+        &-input {
+          width: 226px;
+          height: 16px;
+          border: 1px solid $tree-op50;
+          border-radius: 5px;
+          background-color: transparent;
+          padding: 8px 12px 6px 12px;
+          font-family: $NanumSquare;
+          font-size: 14px;
+          word-wrap: break-word;
+          word-break: break-all;
+          appearance: none;
+          &:focus {
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: 0 0 0 2px $green;
+          }
+          // placeholder
+          @include input-placeholder-color;
+        }
       }
     }
   }
@@ -87,7 +108,7 @@
       width: 50%;
       // margin-bottom: 7px;
 
-      .base-item-title {
+      &-title {
         width: 97px;
         height: 46px;
         display: flex;
@@ -99,11 +120,32 @@
         color: $gray-primary;
       }
 
-      .base-item-content {
+      &-content {
         align-items: center;
         font-family: $NanumSquareBold;
         font-size: 20px;
         color: $gray-secondary;
+
+        &-input {
+          width: 226px;
+          height: 16px;
+          border: 1px solid $tree-op50;
+          border-radius: 5px;
+          background-color: transparent;
+          padding: 8px 12px 6px 12px;
+          font-family: $NanumSquare;
+          font-size: 14px;
+          word-wrap: break-word;
+          word-break: break-all;
+          appearance: none;
+          &:focus {
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: 0 0 0 2px $green;
+          }
+          // placeholder
+          @include input-placeholder-color;
+        }
       }
     }
   }
@@ -136,7 +178,7 @@
       gap: 7px;
       width: 50%;
 
-      .base-item-title {
+      &-title {
         width: 97px;
         height: 46px;
         display: flex;
@@ -148,7 +190,7 @@
         color: $gray-primary;
       }
 
-      .base-item-content {
+      &-content {
         max-width: 250px;
         align-items: center;
         font-family: $NanumSquareBold;
@@ -156,6 +198,27 @@
         word-wrap: break-word;
         word-break: break-all;
         color: $gray-secondary;
+
+        &-input {
+          width: 226px;
+          height: 16px;
+          border: 1px solid $tree-op50;
+          border-radius: 5px;
+          background-color: transparent;
+          padding: 8px 12px 6px 12px;
+          font-family: $NanumSquare;
+          font-size: 14px;
+          word-wrap: break-word;
+          word-break: break-all;
+          appearance: none;
+          &:focus {
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: 0 0 0 2px $green;
+          }
+          // placeholder
+          @include input-placeholder-color;
+        }
       }
     }
   }

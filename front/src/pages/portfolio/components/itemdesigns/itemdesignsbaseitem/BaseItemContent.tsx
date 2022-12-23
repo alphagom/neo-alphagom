@@ -1,7 +1,11 @@
 import React from 'react'
 
-function BaseItemContent() {
-  return <div className="base-item-content">BaseItemContent</div>
+type ContentProps = {
+  contentValue: string
+}
+
+function BaseItemContent({ contentValue }: ContentProps) {
+  return <div className="base-item-content">{contentValue}</div>
 }
 
 export default BaseItemContent

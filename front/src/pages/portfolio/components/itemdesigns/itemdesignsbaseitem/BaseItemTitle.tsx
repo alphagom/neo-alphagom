@@ -1,7 +1,10 @@
 import React from 'react'
 
-function BaseItemTitle() {
-  return <div className="base-item-title">BaseItemTitle</div>
+type TitleProps = {
+  titleValue: string
+}
+function BaseItemTitle({ titleValue }: TitleProps) {
+  return <div className="base-item-title">{titleValue}</div>
 }
 
 export default BaseItemTitle
