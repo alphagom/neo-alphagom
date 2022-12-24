@@ -1,9 +1,17 @@
 import React from 'react'
 
-function BtnSmallShort() {
+function BtnSmallShort({
+  BtnName,
+  doFunction,
+}: {
+  BtnName: string | number
+  doFunction(): void
+}) {
   return (
     <div>
-      <div>BtnSmallShort</div>
+      <button type="button" onClick={() => doFunction()}>
+        {BtnName}
+      </button>
     </div>
   )
 }
