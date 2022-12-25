@@ -1,0 +1,225 @@
+@import '../../../../../styles/mixins';
+
+.base-title {
+  margin-left: 26px;
+  margin-bottom: 9px;
+  font-family: $NanumSquareExtraBold;
+  font-size: 24px;
+  color: $gray-primary;
+}
+
+@include mobile {
+  .base-card {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 50px;
+    border: 1px solid $gray-fourth;
+    border-radius: 20px;
+
+    .base-item-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      max-height: fit-content;
+      overflow: hidden;
+      img {
+        width: 80%;
+        object-fit: cover;
+      }
+    }
+
+    .base-item {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      width: 50%;
+      // margin-bottom: 7px;
+
+      &-title {
+        width: 97px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        font-family: $NanumSquareExtraBold;
+        font-size: 20px;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: $gray-primary;
+      }
+
+      &-content {
+        align-items: center;
+        font-family: $NanumSquareBold;
+        font-size: 20px;
+        color: $gray-secondary;
+
+        &-input {
+          width: 226px;
+          height: 16px;
+          border: 1px solid $tree-op50;
+          border-radius: 5px;
+          background-color: transparent;
+          padding: 8px 12px 6px 12px;
+          font-family: $NanumSquare;
+          font-size: 14px;
+          word-wrap: break-word;
+          word-break: break-all;
+          appearance: none;
+          &:focus {
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: 0 0 0 2px $green;
+          }
+          // placeholder
+          @include input-placeholder-color;
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .base-card {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    border: 1px solid $gray-fourth;
+    border-radius: 20px;
+
+    .base-item-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      max-height: fit-content;
+      overflow: hidden;
+      img {
+        width: 80%;
+        object-fit: cover;
+      }
+    }
+
+    .base-item {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      width: 50%;
+      // margin-bottom: 7px;
+
+      &-title {
+        width: 97px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        font-family: $NanumSquareExtraBold;
+        font-size: 20px;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: $gray-primary;
+      }
+
+      &-content {
+        align-items: center;
+        font-family: $NanumSquareBold;
+        font-size: 20px;
+        color: $gray-secondary;
+
+        &-input {
+          width: 226px;
+          height: 16px;
+          border: 1px solid $tree-op50;
+          border-radius: 5px;
+          background-color: transparent;
+          padding: 8px 12px 6px 12px;
+          font-family: $NanumSquare;
+          font-size: 14px;
+          word-wrap: break-word;
+          word-break: break-all;
+          appearance: none;
+          &:focus {
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: 0 0 0 2px $green;
+          }
+          // placeholder
+          @include input-placeholder-color;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .base-card {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    border: 1px solid $gray-fourth;
+    border-radius: 20px;
+
+    .base-item-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      max-height: fit-content;
+      overflow: hidden;
+      img {
+        width: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .base-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      width: 50%;
+
+      &-title {
+        width: 97px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        font-family: $NanumSquareExtraBold;
+        font-size: 20px;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: $gray-primary;
+      }
+
+      &-content {
+        max-width: 250px;
+        align-items: center;
+        font-family: $NanumSquareBold;
+        font-size: 20px;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: $gray-secondary;
+
+        &-input {
+          width: 226px;
+          height: 16px;
+          border: 1px solid $tree-op50;
+          border-radius: 5px;
+          background-color: transparent;
+          padding: 8px 12px 6px 12px;
+          font-family: $NanumSquare;
+          font-size: 14px;
+          word-wrap: break-word;
+          word-break: break-all;
+          appearance: none;
+          &:focus {
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: 0 0 0 2px $green;
+          }
+          // placeholder
+          @include input-placeholder-color;
+        }
+      }
+    }
+  }
+}
