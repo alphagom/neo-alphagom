@@ -112,3 +112,17 @@ export const PortfolioItems: PorfolioItemsType[] = [
     itemForm: CoverletterForm,
   },
 ]
+
+// 포트폴리오 항목 type ===============================
+// 프로젝트 type
+export interface IProjectTypes {
+  ProjectName: string
+  ProjectStartDate: string
+  ProjectEndDate: string
+  ProjectDescript: string
+  ProjectPplNum: number | string
+  ProjectWork: string
+  ProjectLink: Array<string>
+  ProjectAchieve: string
+  ProjectRemind: string
+}
