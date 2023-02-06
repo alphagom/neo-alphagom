@@ -104,11 +104,20 @@
     font-family: $NanumSquareExtraBold;
     color: $black;
   }
-  .user-icon {
+  .nav-dropdown-btn {
     position: absolute;
-    width: 67px;
     bottom: 67px;
     right: 145px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: auto;
+    cursor: pointer;
+  }
+  .user-icon {
+    width: 67px;
   }
   /* 선택된 상태의 컬러를 유지하기 위해선 tsx 파일 쪽에서 클래스를 추가하는 등의 행위가 필요함 */
 }
