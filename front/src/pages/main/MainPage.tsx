@@ -1,9 +1,11 @@
 import React from 'react'
+import PortfolioCardsList from './components/PortfolioCardsList'
 
 function MainPage() {
   return (
     <div>
-      <p>MainPage</p>
+      {/* <p>MainPage</p> */}
+      <PortfolioCardsList/>
     </div>
   )
 }
