@@ -17,13 +17,14 @@ export const TestHandler = [
     )
   ),
 
-  rest.get('http://localhost:8080/api/v1/portfolio-list', (req, res, ctx) =>
+  rest.get('http://localhost:8080/api/v1/portfolio-list', (req, res, ctx) => 
     res(
       ctx.status(200),
       ctx.json(
+        // pfCovers,
         {
-          portfolioSeq : 1,
-          cover : PortfolioCover1,
+          portfolioSeq : 2,
+          cover : PortfolioCover2,
           nickname : 'devgom',
         },
         // {

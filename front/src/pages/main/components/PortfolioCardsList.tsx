@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil'
 import axios from 'axios';
+import '../MainPage.scss'
 // import { Link } from 'react-router-dom';
 
 // atom 과 selector import

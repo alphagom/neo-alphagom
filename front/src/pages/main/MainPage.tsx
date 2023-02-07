@@ -3,8 +3,7 @@ import PortfolioCardsList from './components/PortfolioCardsList'
 
 function MainPage() {
   return (
-    <div>
-      {/* <p>MainPage</p> */}
+    <div className='main-page'>
       <PortfolioCardsList/>
     </div>
   )
