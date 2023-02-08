@@ -43,3 +43,15 @@ const mainList = async ({ method, url }: mainListItems) => {
 // API 요청 종류 선언
 // 앞으로 요청을 import 해서 axios 요청 작성하면 된다
 export const GETMAINLIST = (url: string) => mainList({ method: 'get', url })
+
+// TestHandler에 넣을 데이터
+export const pfCard = {
+  data: [
+    {
+      portfolioSeq: 1,
+      cover: 'https://www.google.com/search?q=portfolio+cover&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjGm_OpjIb9AhUvQPUHHctsDYAQ_AUoAXoECAEQAw&biw=2560&bih=1297&dpr=1.5',
+      // cover: 'https://marketplace.canva.com/EAFOv0-FKOY/1/0/1131w/canva-black-and-white-monoline-typedriven-portfolio-cover-page--i5sVeUpuMk.jpg',
+      nickname: 'devgom',
+    }
+  ]
+}
