@@ -1,5 +1,25 @@
 @import '../styles/mixins';
 
+// dropdown(react-contexify) style overriding
+.contexify {
+  font-weight: bold;
+  border: 1px solid #36cc7c;
+  --contexify-zIndex: 666;
+  --contexify-menu-minWidth: 200px;
+  --contexify-menu-padding: 6px;
+  --contexify-menu-radius: 20px;
+  --contexify-menu-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1),
+    2px 2px 2px rgba(0, 0, 0, 0.1), 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+  --contexify-separator-color: #36cc7c;
+  --contexify-separator-margin: 5px;
+  --contexify-itemContent-padding: 10px 10px 10px 20px;
+  --contexify-activeItem-radius: 13px;
+  --contexify-item-color: #333;
+  --contexify-activeItem-color: #000;
+  --contexify-activeItem-bgColor: #d7f5e5;
+}
+
 // 스크롤 다운 이벤트 감지 시 높이 변화 줄 예정
 
 .nav-item-line {

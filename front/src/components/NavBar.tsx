@@ -40,7 +40,10 @@ function NavBar() {
     <div className="navbar">
       {/* Context Menu */}
       <Menu id={MENU_ID}>
+        <Item>좋아요한 포트폴리오</Item>
+        <Item>저장한 포트폴리오</Item>
         <Item onClick={() => navigate(`/myportfolio`)}>내 포트폴리오</Item>
+        <Item>계정 설정</Item>
         <Separator />
         {/* 로그인 모달 띄우기 */}
         <Item onClick={loginModalHandler}>로그인</Item>
