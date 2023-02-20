@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/devgom?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: whkwjf72
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# mybatis 관련 설정
+mybatis:
+  # resources/mapper/ 에 있는 모든 xml 파일
+  mapper-locations: mapper/*.xml

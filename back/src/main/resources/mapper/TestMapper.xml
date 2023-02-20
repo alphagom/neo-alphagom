@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- mapper 설정 코드-->
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- mapper를 사용하는 Repository의 전체 경로를 적어줘야함. -->
+<mapper namespace="com.devgom.back.common.domain.TestMapperRepository">
+<insert id="save1" parameterType="com.devgom.back.common.dto.TestMapperDTO">
+    insert into test(test_name) values (#{test_name})
+</insert>
+</mapper>

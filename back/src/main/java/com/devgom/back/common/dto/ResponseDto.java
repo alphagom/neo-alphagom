@@ -1,11 +1,11 @@
-package com.devgom.back.common.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-@Data
-@AllArgsConstructor
-public class ResponseDto {
-
-    private String message;
-}
+//package com.devgom.back.common.dto;
+//
+//import lombok.AllArgsConstructor;
+//import lombok.Data;
+//
+//@Data
+//@AllArgsConstructor
+//public class ResponseDto {
+//
+//    private String message;
+//}
